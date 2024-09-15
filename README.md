@@ -36,7 +36,11 @@ Table
 - შაბათი
   11:00 - Math
   
-|Day|Time|subect|
-|:--|:--|:--|
-|Thursday|09:00|Modern Society & Citizen|
-|Staurday|11:00|Probability & Mathematical Statistics|
+|Day|Time|subect|Credits|
+|:--|:--|:--|:--|
+|Thursday|09:00|Modern Society & Citizen|4|
+|Staurday|11:00|Probability & Mathematical Statistics|6|
+|
+|
+|
+|
