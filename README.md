@@ -3,7 +3,8 @@
 	-  რუსუდან გოგიბერიძე
 
 მონაცემთა სტრუქტურები და ალგორითმები 1 - 6 Credits
-	- როჭიკაშვილთან, კუცია
+    - როჭიკაშვილთან, კუცია
+
 ------------------------------------------
 
 
@@ -21,25 +22,16 @@
 English 
 	- თამარ მეკოშვილი
 	
-	
-	
-Day       Time  Subject   
-Thursday  13:00 Algorithms
-Saturday  11:00 Math
+# Thursday
+### 09:00 - Modern Society         **4**
 
-
-Table
-
-- Thursday
-  --- 13:00 Algorithms
-
-- შაბათი
-  11:00 - Math
+# Saturday
+### 11:00 - Probabilty & Math Stats **6**
   
 |Day|Time|subect|Credits|
 |:--|:--|:--|:--|
 |Thursday|09:00|Modern Society & Citizen|4|
-|Staurday|11:00|Probability & Mathematical Statistics|6|
+|Saturday|11:00|Probability & Mathematical Statistics|6|
 |
 |
 |
