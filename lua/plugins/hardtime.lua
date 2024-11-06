@@ -1,4 +1,4 @@
-return {
+--[[return {
   "m4xshen/hardtime.nvim",
   dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
   opts = {},
@@ -7,3 +7,5 @@ return {
     vim.keymap.set('n', '<leader>ht', ':Hardtime toggle<CR>', {})
   end
 }
+--]]
+return {}
