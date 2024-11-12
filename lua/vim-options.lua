@@ -11,4 +11,5 @@ vim.g.maplocalleader = "\\"
 
 -- Map <leader>y to copy to the system clipboard in normal 
 vim.api.nvim_set_keymap("n", "<leader>y", '"+y', { noremap = true })
+vim.api.nvim_set_keymap("v", "<leader>y", '"+y', { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>Y", 'gg"+yG', { noremap = true })
