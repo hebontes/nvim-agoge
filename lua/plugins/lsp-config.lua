@@ -2,41 +2,45 @@ return {
   {
     "williamboman/mason.nvim",
     config = function()
-      require("mason").setup()
-    end
+      require("mason").setup({
+        opts = {
+          ensure_installed = { "clang-format" },
+        },
+      })
+    end,
   },
   {
     "williamboman/mason-lspconfig.nvim",
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd"},
-				on_attach = function(client, bufnr)
-					client.server_capabilities.documentFormattingProvider = false
+    config = function()
+      require("mason-lspconfig").setup({
+        ensure_installed = { "lua_ls", "clangd" },
+        on_attach = function(client, bufnr)
+          client.server_capabilities.documentFormattingProvider = false
           client.server_capabilities.signatureHelpProvider = false
-				end
-			})
-		end,
+        end,
+      })
+    end,
   },
   {
     "neovim/nvim-lspconfig",
     config = function()
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-      local lspconfig = require('lspconfig')
+      local lspconfig = require("lspconfig")
 
       lspconfig.lua_ls.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
       lspconfig.ts_ls.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
       lspconfig.clangd.setup({
-        capabilities = capabilities
+        capabilities = capabilities,
       })
-      vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
-      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-      vim.keymap.set('n', 'gr', vim.lsp.buf.references, {})
-      vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
-    end
-  }
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
+      vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
+      vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
+      vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+    end,
+  },
 }
