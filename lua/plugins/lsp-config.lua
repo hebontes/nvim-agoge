@@ -9,9 +9,10 @@ return {
     "williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "clangd", },
+				ensure_installed = { "lua_ls", "clangd"},
 				on_attach = function(client, bufnr)
 					client.server_capabilities.documentFormattingProvider = false
+          client.server_capabilities.signatureHelpProvider = false
 				end
 			})
 		end,
@@ -24,9 +25,6 @@ return {
       local lspconfig = require('lspconfig')
 
       lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
-      lspconfig.ast_grep.setup({
         capabilities = capabilities
       })
       lspconfig.ts_ls.setup({

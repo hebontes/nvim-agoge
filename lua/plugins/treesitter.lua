@@ -5,9 +5,9 @@ return {
     -- TREESITTER
     local config = require("nvim-treesitter.configs")
     config.setup({
-      ensure_installed = { "lua", "go", "javascript", "cpp" },
+      ensure_installed = { "lua", "go", "c", "cpp"  },
       auto_install = true,
---      highlight = { enable = true },
+      highlight = { enable = true },
     })
   end
 }
