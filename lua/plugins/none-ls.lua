@@ -9,7 +9,7 @@ return {
 				null_ls.builtins.formatting.stylua,
 				null_ls.builtins.formatting.clang_format.with({
 					extra_args = {
-						"--style={IndentWidth: 4}",
+						"--style={IndentWidth: 4, ColumnLimit: 120, AllowAllParametersOfDeclarationOnNextLine: false, BinPackParameters: true, AllowAllArgumentsOnNextLine: false, BinPackArguments: true}",
 					},
 				}),
 			},
